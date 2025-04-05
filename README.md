@@ -1,89 +1,96 @@
-Grocery-App
+# Grocery-App
 An application for smart shopping 🛒. Features budget tracking, store locator, real-time deals, and healthy options. Built with React Native + Node.js + PostgreSQL.
 
-Features
-Smart Shopping Lists: Create, edit, and categorize items with cost estimation.
-Budget Tracker: Set spending limits and get real-time alerts.
-Store Locator: Find nearby grocery stores using Google Maps.
-Deals & Discounts: Get notified about sales at your favorite stores.
-Healthy Options: Dedicated section for nutritious choices.
-Offline Mode: Access your lists without internet.
-Tech Stack
-Area	Technology
-Frontend	React Native (TypeScript)
-Backend	Node.js + Express.js
-Database	PostgreSQL
-Authentication	Firebase Auth
-Maps	Google Maps API
-State Management	Redux Toolkit
-Testing	Jest + Detox
-Getting Started
-Prerequisites
-Node.js (v18+)
-PostgreSQL (v15+)
-Expo CLI (for mobile testing)
-Installation
-Clone the repo
-Set up the backend: cd server
-npm install
-cp .env.example .env # Add your credentials
-npm run dev
-Set up the frontend: cd ../client
-npm install
-expo start
+## Features  
+- **Smart Shopping Lists**: Create, edit, and categorize items with cost estimation.  
+- **Budget Tracker**: Set spending limits and get real-time alerts.  
+- **Store Locator**: Find nearby grocery stores using Google Maps.  
+- **Deals & Discounts**: Get notified about sales at your favorite stores.  
+- **Healthy Options**: Dedicated section for nutritious choices.  
+- **Offline Mode**: Access your lists without internet.
+
+## Tech Stack  
+| **Area**       | **Technology**                          |  
+|----------------|----------------------------------------|  
+| Frontend       | React Native (TypeScript)              |  
+| Backend        | Node.js + Express.js                   |  
+| Database       | PostgreSQL                             |  
+| Authentication | Firebase Auth                          |  
+| Maps           | Google Maps API                        |  
+| State Management | Redux Toolkit                        |  
+| Testing        | Jest + Detox                          |  
+
+## Getting Started  
+### Prerequisites  
+- Node.js (v18+)  
+- PostgreSQL (v15+)  
+- Expo CLI (for mobile testing)
+
+### Installation  
+1. Clone the repo
+2. Set up the backend:
+   cd server  
+npm install  
+cp .env.example .env  # Add your credentials  
+npm run dev 
+3. Set up the frontend:
+cd ../client  
+npm install  
+expo start  
+
 Project Structure
 
 src/
 
-├── client/ # Frontend (React Native)
+├── client/                  # Frontend (React Native)
 
-│ ├── assets/ # Images, fonts, etc.
+│   ├── assets/              # Images, fonts, etc.
 
-│ ├── components/ # Reusable UI components
+│   ├── components/          # Reusable UI components
 
-│ ├── screens/ # App screens (Home, Shopping List, Budget, etc.)
+│   ├── screens/             # App screens (Home, Shopping List, Budget, etc.)
 
-│ ├── navigation/ # Routing (React Navigation)
+│   ├── navigation/          # Routing (React Navigation)
 
-│ ├── context/ # State management (Redux/Context API)
+│   ├── context/             # State management (Redux/Context API)
 
-│ ├── services/ # API calls (Axios/Fetch)
+│   ├── services/            # API calls (Axios/Fetch)
 
-│ └── App.js # Main entry point
-
-│
-
-├── server/ # Backend (Node.js + Express)
-
-│ ├── controllers/ # Business logic
-
-│ ├── models/ # Database models (PostgreSQL/MongoDB)
-
-│ ├── routes/ # API endpoints
-
-│ ├── middleware/ # Auth, error handling
-
-│ └── server.js # Server entry point
+│   └── App.js               # Main entry point
 
 │
 
-├── database/ # Database scripts/SQL files (if using PostgreSQL)
+├── server/                  # Backend (Node.js + Express)
+
+│   ├── controllers/         # Business logic
+
+│   ├── models/              # Database models (PostgreSQL/MongoDB)
+
+│   ├── routes/              # API endpoints
+
+│   ├── middleware/          # Auth, error handling
+
+│   └── server.js            # Server entry point
 
 │
 
-├── docs/ # Project documentation
-
-│ ├── API.md # API endpoints
-
-│ └── DESIGN.md # UI mockups (Figma links)
+├── database/                # Database scripts/SQL files (if using PostgreSQL)
 
 │
 
-├── .gitignore # Ignore node_modules, .env, etc.
+├── docs/                    # Project documentation
 
-├── README.md # Project overview + setup instructions
+│   ├── API.md               # API endpoints
 
-└── package.json # Shared scripts (e.g., npm run dev)
+│   └── DESIGN.md            # UI mockups (Figma links)
+
+│
+
+├── .gitignore              # Ignore node_modules, .env, etc.
+
+├── README.md               # Project overview + setup instructions
+
+└── package.json            # Shared scripts (e.g., `npm run dev`)
 
 How to Contribute
 
@@ -97,4 +104,6 @@ How to Contribute
 
 5.Open a Pull Request.
 
-License MIT © 2024
+
+License
+MIT © 2024
